@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Árvore Binária</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            overflow-y: hidden;
+        }
+
+        body:hover {
+            overflow-y: overlay;
+        }
+        svg {
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Simulação de Árvore Binária</h1>
+    <div>
+        <button id="adicionarBotao">Adicionar Nó</button>
+    </div>
+    <svg id="svgArvoreBinaria" width="800" height="600">
+        <!-- Elementos serão adicionados aqui dinamicamente -->
+    </svg>
+
+    <script src="datastructures/nodes/NoArvore.js"></script>
+    <script src="datastructures/ArvoreBinaria.js"></script>
+    <script src="scriptArvore.js"></script>
+</body>
+</html>
