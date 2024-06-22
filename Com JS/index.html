@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Ligada Simulação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        svg {
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulação de Lista Ligada</h1>
+    <div>
+        <button id="addButton">Adicionar</button>
+        <button id="removeButton">Desenfileirar</button>
+    </div>
+    <svg id="linkedListSVG" width="800" height="200">
+        <!-- Elements will be added here dynamically -->
+    </svg>
+
+    <script src="datastructures/nodes/NoLista.js"></script>
+    <script src="datastructures/ListaLigada.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
