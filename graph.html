@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização de Grafos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Visualização de Grafos</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h4>Adicionar Vértice</h4>
+                <form id="add-vertex-form">
+                    <div class="form-group">
+                        <label for="vertex-label">Rótulo</label>
+                        <input type="text" id="vertex-label" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vertex-x">Coordenada X</label>
+                        <input type="number" id="vertex-x" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vertex-y">Coordenada Y</label>
+                        <input type="number" id="vertex-y" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Adicionar Vértice</button>
+                </form>
+
+                <h4 class="mt-4">Adicionar Aresta</h4>
+                <form id="add-edge-form">
+                    <div class="form-group">
+                        <label for="edge-from">Vértice de Origem (Rótulo)</label>
+                        <input type="text" id="edge-from" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edge-to">Vértice de Destino (Rótulo)</label>
+                        <input type="text" id="edge-to" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edge-weight">Peso</label>
+                        <input type="number" id="edge-weight" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edge-direction">Direção</label>
+                        <select id="edge-direction" class="form-control" required>
+                            <option value="uni">Unidirecional</option>
+                            <option value="bi">Bidirecional</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Adicionar Aresta</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <canvas id="canvas" width="800" height="600" class="border"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+    .border {
+        border: 1px solid #000;
+    }
+</style>
+
+

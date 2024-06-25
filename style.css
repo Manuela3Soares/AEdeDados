@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+svg {
+    border: 1px solid black;
+}
+
+
+.stack-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.link {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+
+.stack-item {
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stack-controls {
+    margin-top: 20px;
+}
+
+
+.node circle {
+    fill: #5cb85c;
+    stroke: #555;
+    stroke-width: 2px;
+}
+
+.link {
+    fill: none;
+    stroke: #999;
+    stroke-opacity: 0.6;
+    stroke-width: 2px;
+}
+
+.node text {
+    font: 12px sans-serif;
+    text-anchor: middle;
+    fill: #000;
+}
+
+

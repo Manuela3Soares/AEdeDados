@@ -25,6 +25,11 @@
         border: 1px solid black;
     }
 
+    text {
+        cursor: context-menu;
+        user-select: none;
+    }
+
 </style>
 <body>
     <div id="controls">
@@ -32,8 +37,8 @@
         <button id="addEdgeButton">Adicionar Aresta</button>
         <button id="removeNodeButton">Remover Nodo</button>
         <button id="removeEdgeButton">Remover Aresta</button>
-        <button id="runBFSButton">Executar BFS</button>
-        <button id="runDFSButton">Executar DFS</button>
+        <!--button id="runBFSButton">Executar BFS</button>
+        <button id="runDFSButton">Executar DFS</button-->
     </div>
     <svg id="graphSVG" width="800" height="600"></svg>
     <script src="datastructures/nodes/NoGrafo.js"></script>
