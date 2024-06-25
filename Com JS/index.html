@@ -10,7 +10,9 @@
     <div class="caixa-principal">
         <h1>Simulando Estrutores de Dados</h1>
         <div id="simuladoCamada">
-            <iframe src="indexArvore.html" frameborder="0"></iframe>
+            <iframe src="indexLista.html" style="display: none" frameborder="0"></iframe>
+            <iframe src="indexArvore.html" style="display: none" frameborder="0"></iframe>
+            <iframe src="indexGrafo.html" style="display: none" frameborder="0"></iframe>
         </div>
     </div>
     <div id="menu-estruturas">
@@ -25,15 +27,27 @@
 
 <script>
     window.onload =  () => {
-        let iframe = document.body.getElementsByTagName('iframe')
+        let iframes = document.body.getElementsByTagName('iframe')
         document.getElementById('E-0').addEventListener('click', () => {
-            iframe.src = 'indexLista.html';
+            mostraIframe(0);
         });
         document.getElementById('E-1').addEventListener('click', () => {
-            iframe.src = 'indexArvore.html';
+            mostraIframe(1);
         });
         document.getElementById('E-2').addEventListener('click', () => {
-            iframe.src = 'indexGrafos.html';
+            mostraIframe(2);
         });
+
+        function mostraIframe(id) {
+            for (let i = 0; i < iframes.length; i++) {
+                if (i == id) {
+                    iframes[i].style.display = 'block';
+                } else {
+                    iframes[i].style.display = 'none';
+                }
+            }
+        }
+
+        document.getElementById('E-0').click();
     };    
 </script>

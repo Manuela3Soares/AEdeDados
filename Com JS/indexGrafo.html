@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Grafo</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls {
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin: 5px;
+    }
+
+    #graphSVG {
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+    <div id="controls">
+        <button id="addNodeButton">Adicionar Nodo</button>
+        <button id="addEdgeButton">Adicionar Aresta</button>
+        <button id="removeNodeButton">Remover Nodo</button>
+        <button id="removeEdgeButton">Remover Aresta</button>
+        <button id="runBFSButton">Executar BFS</button>
+        <button id="runDFSButton">Executar DFS</button>
+    </div>
+    <svg id="graphSVG" width="800" height="600"></svg>
+    <script src="datastructures/nodes/NoGrafo.js"></script>
+    <script src="datastructures/Grafo.js"></script>
+    <script src="scriptGrafo.js"></script>
+</body>
+</html>

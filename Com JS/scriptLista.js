@@ -10,7 +10,6 @@ document.getElementById('removeButton').addEventListener('click', removerElement
 function adicionarElemento() {
     const novoValor = listaLigada.tamanho + 1;
     listaLigada.adicionarNoFinal(novoValor);
-    debugger;
     let topo = listaLigada.topo
     desenharListaLigada(topo);
 }
